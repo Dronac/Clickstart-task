@@ -3,17 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <title>Document</title>
 
 
 <style> 
 
 * {font-family: Calibri, Verdana, Geneva, Tahoma, sans-serif;}
-h1 {
-    text-align: left;
-    margin-left: 5%;
-    margin-top: 4%;}
-
 
 
 </style>
@@ -23,19 +20,74 @@ h1 {
 
 <body>
 
-###nav area here, HOME BOOKINGS MENU ABOUT CAREERS CHECKOUT###
+
+    <nav class="navbar bg-light navbar-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+              <img src="..\images\Littlelogo.png" alt="Avatar Logo" style="width:40px;" class="rounded-pill"> 
+            </a>
+          </div>
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+              <li class="nav-item"><a class="nav-link" href="#">HOME</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">OUR RESTAURANT</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">MENU</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">BOOKINGS</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">GIFTS AND VOUCHERS</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">CAREERS</a></li> 
+            </ul>
+          </div>
+        </div>
+      </nav>
     
-<h1 id="main restaurant">Little restaurant</h1>
+<h1 id="main restaurant" style="text-align: center; margin-top: 5%; margin-bottom: 5%;">Little restaurant</h1>
 
-<div style="background-color: antiquewhite; height: 200px;
-width: 50%; margin: auto; margin-top: 200px;">
-    <p style="text-align: center; padding: 10%; font-size: 24px;">Purchase your gift vouchers</p>
+<h4 id="address and infos" style="text-align: center; margin-bottom: 7%;"> 10 Random Street, Townville <br> TV3 5LK United Kingdom <br> 07918273645 hello@restaurant.com </h4>
 
+<div id="food-pics" class="carousel slide; container-sm" data-bs-ride="carousel">
 
+    <!-- Indicators/dots -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+
+    </div>
+    
+    <!-- The slideshow/carousel -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="../images/Wilsons-food0.JPG" alt="Food0" class="d-block" style="width:100%">
+      </div>
+      <div class="carousel-item">
+        <img src="images\Wilsons-food1.JPG" alt="Food1" class="d-block" style="width:100%">
+      </div>
+      <div class="carousel-item">
+        <img src="images\Wilsons-food2.JPG" alt="Food1" class="d-block" style="width:100%">
+      </div>
+      <div class="carousel-item">
+        <img src="images\Wilsons-food3.JPG" alt="Food1" class="d-block" style="width:100%">
+      </div>
+      <div class="carousel-item">
+        <img src="images\Wilsons-food4.JPG" alt="Food1" class="d-block" style="width:100%">
+      </div>
+    </div>
+    
+    <!-- Left and right controls/icons -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
 </div>
-
-</div>
-
 
 
 </body>
