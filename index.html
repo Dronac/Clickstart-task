@@ -14,7 +14,8 @@
 
 nav {
   background-image: url("images/bg-flowers2.jpg");
-  font-size:140%
+  font-size:140%;
+  text-decoration-color: black;
 }
 
 
@@ -26,7 +27,7 @@ nav {
 <body>
 
 
-    <nav class="navbar bg-light navbar-light">
+    <nav class="navbar bg-light navbar-light; sticky-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
               <img src="..\images\Littlelogo.png" alt="Avatar Logo" style="width:40px;" class="rounded-pill"> 
@@ -36,11 +37,11 @@ nav {
           </button>
           <div class="collapse navbar-collapse" id="collapsibleNavbar">
             <ul class="navbar-nav">
-              <li class="nav-item"><a class="nav-link" href="#"><b>HOME</b></a></li>
+              <li class="nav-item"><a class="nav-link" href="../index.html"><b>HOME</b></a></li>
               <li class="nav-item"><a class="nav-link" href="#"> <b>OUR RESTAURANT</b></a></li>
-              <li class="nav-item"><a class="nav-link" href="#"> <b>MENU</b></a></li>
+              <li class="nav-item"><a class="nav-link" href="../menu.html"> <b>MENU</b></a></li>
               <li class="nav-item"><a class="nav-link" href="#"> <b>BOOKINGS</b></a></li>
-              <li class="nav-item"><a class="nav-link" href="#"> <b>GIFTS AND VOUCHERS</b></a></li>
+              <li class="nav-item"><a class="nav-link" href="../gifts.html"> <b>GIFTS AND VOUCHERS</b></a></li>
               <li class="nav-item"><a class="nav-link" href="#"> <b>CAREERS</b></a></li> 
             </ul>
         </div>
@@ -90,11 +91,19 @@ nav {
   Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
   Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
   
+<br>
+<br>
 
-<a id="menubtn" href="#" class="btn btn-outline-dark "> Menu </a>
+<footer class="text-center bg-body-tertiary">
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+    © 2023 Copyright:
+    <a class="text-body" href="#">Human foods Ltd.</a>
+  </div>
+  <!-- Copyright -->
 
-
-
+</footer>
 
 </body>
+
 </html>
